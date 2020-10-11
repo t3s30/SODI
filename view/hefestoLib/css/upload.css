@@ -54,7 +54,9 @@
     
     }
     
-    
+    #forma1,#forma2{
+      display:inline-block !important;
+  }
     
     
     /* Add a black background color to the top navigation */

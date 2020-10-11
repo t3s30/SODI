@@ -28,14 +28,36 @@ $usuario = $_SESSION['user'];
   <p>Bienvenido <?php echo $usuario?></p>
 </div>
 
+
+<?php
+  /* include('config/conn.php');
+  $id = $_GET['id'];
+  $resultado = $conn->query("SELECT * FROM demanda WHERE ID=$id ");
+
+  while ($fila = $resultado->fetch_assoc()) {
+    $id = $fila['ID'];
+    $expInterno = $fila["expInterno"];
+    $expediente = $fila["expediente"];
+    $pdf = $fila["pdf"];
+   
+    $pdf;
+
+    $pdfSeparado = explode(',',$pdf); 
+    
+    foreach($pdfSeparado as $row){
+      echo $row;
+
+  }}  */?>
+
 <!-- Wrapper -->
-<div class="wrapper" style="height:500px">
+<div class="wrapper" style="height:300px">
 
   <section class="col-xl-12 offset-xl-6 col-lg-6 offset-lg-6 col-md-12 full-dark-bg">
     <!-- Files section -->
     <h4 class="section-sub-title" style="padding-bottom: 9%;"><span>Elije PDF´S</span></h4>
 
-    <div class="fallback">
+    <div class="formas">
+      <div id="forma1">
       <form enctype="multipart/form-data" id="form" onsubmit="return submitForm();">
         <button type="button" onclick="selectFiles();" style="width:100px">Seleccionar</button>
         <br>
@@ -44,7 +66,18 @@ $usuario = $_SESSION['user'];
         <br>
         <input type="submit" value="Subir" style="background-color:black;color:white;">
       </form>
-
+      </div>
+      <div id="forma2">
+      <form enctype="multipart/form-data" id="formR" onsubmit="return submitRemplaza();">
+        <br>
+        <div id="selected-images"></div>
+        <br>
+        <br>
+        <input type="submit" value="Remplaza" style="background-color:black;color:white;">
+      </form>
+      </div>  
+   </div>
+      
       <script>
         var selectedImages = [];
 
@@ -76,6 +109,47 @@ $usuario = $_SESSION['user'];
 
           var ajax = new XMLHttpRequest();
           ajax.open("POST", "Http.php", true);
+          ajax.send(formData);
+
+          ajax.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+
+              Swal.fire({
+                position: "top-center",
+                icon: "success",
+                title: "Archivos Cargados!! :=) ",
+                showConfirmButton: false,
+                timer: 2000
+              }).then(
+                function() {
+                  window.location.href = "main.php";
+                }
+              );
+
+
+
+
+            }
+          };
+
+          return false;
+        }
+
+
+        function submitRemplaza() {
+          var form = document.getElementById("formR");
+          var formData = new FormData(form);
+          var num = <?php echo $_GET['id'] ?>;
+
+          for (var a = 0; a < selectedImages.length; a++) {
+            formData.append("images[]", selectedImages[a]);
+
+            formData.append("id", num);
+
+          }
+
+          var ajax = new XMLHttpRequest();
+          ajax.open("POST", "HttpRemplaza.php", true);
           ajax.send(formData);
 
           ajax.onreadystatechange = function() {
