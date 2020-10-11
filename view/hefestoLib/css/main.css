@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.dt-buttons {
+    float: center;
+    margin-left: 550px;
+}
+
+p{
+    margin-top:15px;
+    }
+
+    a{
+        text-decoration: none !important;
+    }
+.containerSames {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2a3449+0,ebefea+95 */
+background-image: url('img/logoImosT.png') !important;
+
+}
+
+#example_info,
+label {
+    color: black;
+}
+
+.page-item.active .page-link {
+    color: #fff !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+
+}
+
+label {
+    padding-right: 30px;
+
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 40px;
+
+}
+
+button:hover {
+    background-color: #66FCF1;
+    color: black;
+}
+
+th {
+    font-size: 11pt;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: black;
+    color: #66FCF1;
+    width: 300px;
+}
+
+tr {
+    font-size: 11pt;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+p {
+    text-align: center;
+
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: black;
+    overflow: hidden;
+    margin-bottom: 50px;
+    height: 70px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav img {
+    float: left;
+
+}
+
+.topnav p {
+    float: left;
+    color: white;
+    margin-left: 20px;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #66FCF1;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #66FCF1;
+    color: black;
+}
+
+p {
+    margin-top: 15px;
+}
+
+.footer,
+.push {
+    height: 50px;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}

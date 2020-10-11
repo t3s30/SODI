@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body
+{
+  background-color: #2E3740;
+}
+p footer{
+  text-align: center;
+  margin-top: 10%;
+  color: #fff;
+}
+
+p{
+  font-size: 9pt;
+}
+h6{
+  color: #fff;
+  margin-top: 1%;
+  margin-left: 6%;
+}
+  div.dt-buttons {
+    float: center;
+    margin-left: 550px;
+  }
+
+  .containerPDF {
+    background-color: #000;
+    margin-left: 50px;
+    margin-right: 5%;
+    padding-top: 3%;
+    padding-right: 2%;
+    padding-left: 5%;
+    margin-bottom: 5%;
+  }
+
+  p {
+    color: #ead63f;
+  }
+
+  #example_info,
+  label {
+    color: black;
+  }
+
+  .page-item.active .page-link {
+    color: #fff !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
+  }
+
+  input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+
+  }
+
+  label {
+    padding-right: 30px;
+
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 40px;
+
+  }
+
+  button:hover {
+    background-color: #66FCF1;
+    color: black;
+  }
+
+  th {
+    font-size: 11pt;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: black;
+    color: #66FCF1;
+    width: 300px;
+  }
+
+  tr {
+    font-size: 11pt;
+    font-family: 'Fira Sans', sans-serif;
+
+  }
+
+
+
+
+  /* Add a black background color to the top navigation */
+  .topnav {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: black;
+    overflow: hidden;
+    margin-bottom: 50px;
+    height: 70px;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav img {
+    float: left;
+
+  }
+
+  .topnav p {
+    float: left;
+    color: white;
+    margin-left: 20px;
+  }
+
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #66FCF1;
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #66FCF1;
+    color: black;
+  }
+
+  p {
+    margin-top: 15px;
+  }
+  .thumbnail{
+    
+  }
+  h4 {
+    color: white;
+    font-size: 15pt;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+  }
+
+  .footer,
+  .push {
+    height: 50px;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+  }

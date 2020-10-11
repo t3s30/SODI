@@ -1,0 +1,106 @@
+body {
+    background-color:#36404c;
+   
+  }
+  label{
+      color: white;
+  }
+  p{
+      color: white;
+  }
+  .colorI{
+    color: #000;
+  }
+  .form-control {
+    background-color: black;
+    color: #66fcf1  ;
+    text-transform: uppercase;
+  }
+  input[type="text"]:disabled {
+    background: #000;
+    
+  }
+  .colorT{
+    color: #66fcf1  ;
+  }
+.contenedor{
+margin-top:20px;
+display:block;
+margin-left: 100px;
+margin-right:auto;
+}
+
+.tituloModal{
+color:red;
+margin-left: 15px;
+
+}
+
+textarea {
+border: 1px solid black;
+background: #1D1E22;
+color: white;
+text-transform: uppercase;
+
+}
+input{
+text-transform: uppercase;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+font-family: 'Fira Sans', sans-serif;
+background-color: black;
+overflow: hidden;
+margin-bottom:50px;
+height:70px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: right;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+.topnav img {
+float: left;
+
+}
+.topnav p {
+float: left;
+color:white;
+margin-left:20px;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #66FCF1;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color: #66FCF1;
+color: black;
+}
+p{
+margin-top:15px;
+}
+
+
+.footer p {
+font-family: 'Fira Sans', sans-serif;
+text-align:center;
+overflow: hidden;
+margin-bottom:50px;
+height:70px;
+position: fixed;
+width:100%;
+left: 0;
+bottom: 0;
+}
